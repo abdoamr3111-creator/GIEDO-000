@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giedo Digital Mall - دليل التطبيق الكامل والنشر</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="تبديل الوضع">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <h1 class="hero-title">Giedo Digital Mall</h1>
+                <p class="hero-subtitle">متجر رقمي متكامل مع Firebase — دليل التطبيق الكامل + خطوات النشر</p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-file-code"></i>
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">ملف برمجي</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">سطر كود</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-star"></i>
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">ميزة متقدمة</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#preview" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        معاينة التطبيق
+                    </a>
+                    <a href="#code" class="btn btn-secondary">
+                        <i class="fas fa-code"></i>
+                        الكود الكامل
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Giedo Mall</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#preview" class="nav-link"><i class="fas fa-mobile-alt"></i> معاينة التطبيق</a></li>
+                    <li><a href="#features" class="nav-link"><i class="fas fa-star"></i> الميزات</a></li>
+                    <li><a href="#code" class="nav-link"><i class="fas fa-code"></i> الكود</a></li>
+                    <li><a href="#firebase" class="nav-link"><i class="fas fa-fire"></i> Firebase</a></li>
+                    <li><a href="#deploy" class="nav-link"><i class="fas fa-rocket"></i> النشر</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- App Preview Section -->
+    <section id="preview" class="section app-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-mobile-alt"></i>
+                    معاينة التطبيق
+                </h2>
+                <p class="section-subtitle">شاهد جميع شاشات التطبيق بشكل تفاعلي</p>
+            </div>
+
+            <div class="preview-container">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen" id="phoneScreen">
+                            <!-- الشاشات سيتم إضافتها عبر JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preview-controls">
+                    <h3>اختر الشاشة</h3>
+                    <div class="screen-buttons">
+                        <button class="screen-btn active" data-screen="splash">
+                            <i class="fas fa-star"></i>
+                            Splash Screen
+                        </button>
+                        <button class="screen-btn" data-screen="home">
+                            <i class="fas fa-home"></i>
+                            الرئيسية
+                        </button>
+                        <button class="screen-btn" data-screen="products">
+                            <i class="fas fa-box"></i>
+                            المنتجات
+                        </button>
+                        <button class="screen-btn" data-screen="details">
+                            <i class="fas fa-info-circle"></i>
+                            تفاصيل المنتج
+                        </button>
+                        <button class="screen-btn" data-screen="cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            السلة
+                        </button>
+                        <button class="screen-btn" data-screen="checkout">
+                            <i class="fas fa-credit-card"></i>
+                            الدفع
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i>
+                    ميزات التطبيق
+                </h2>
+                <p class="section-subtitle">تطبيق متكامل مع جميع الميزات الاحترافية</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>مصادقة آمنة</h3>
+                    <p>نظام تسجيل دخول كامل مع Firebase Auth</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>قاعدة بيانات حقيقية</h3>
+                    <p>Firestore للبيانات مع تحديثات فورية</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>سلة تسوق متقدمة</h3>
+                    <p>إدارة السلة مع كوبونات خصم</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <h3>نظام طلبات</h3>
+                    <p>إنشاء وتتبع الطلبات بالكامل</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>لوحة إدارة</h3>
+                    <p>لوحة تحكم كاملة للأدمن</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>بحث وفلترة</h3>
+                    <p>بحث متقدم في المنتجات</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>تقييمات</h3>
+                    <p>نظام تقييم المنتجات</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Material Design 3</h3>
+                    <p>تصميم عصري وجميل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Section -->
+    <section id="code" class="section code-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    الكود الكامل
+                </h2>
+                <p class="section-subtitle">جميع الملفات البرمجية مع شرح تفصيلي</p>
+            </div>
+
+            <div class="code-navigation">
+                <button class="code-nav-btn active" data-file="register">
+                    <i class="fas fa-user-plus"></i>
+                    Register Screen
+                </button>
+                <button class="code-nav-btn" data-file="orders">
+                    <i class="fas fa-receipt"></i>
+                    Orders Screen
+                </button>
+                <button class="code-nav-btn" data-file="account">
+                    <i class="fas fa-user"></i>
+                    Account Screen
+                </button>
+                <button class="code-nav-btn" data-file="checkout">
+                    <i class="fas fa-credit-card"></i>
+                    Checkout Screen
+                </button>
+            </div>
+
+            <div id="codeContent" class="code-content">
+                <!-- سيتم ملؤه ديناميكياً -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Firebase Setup Section -->
+    <section id="firebase" class="section firebase-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-fire"></i>
+                    إعداد Firebase
+                </h2>
+                <p class="section-subtitle">خطوات ربط التطبيق بـ Firebase</p>
+            </div>
+
+            <div class="firebase-steps">
+                <div class="firebase-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>إنشاء مشروع Firebase</h3>
+                        <p>اذهب إلى <a href="https://console.firebase.google.com" target="_blank">Firebase Console</a> وأنشئ مشروعاً جديداً باسم "giedo-digital-mall"</p>
+                    </div>
+                </div>
+
+                <div class="firebase-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>إضافة تطبيق Android</h3>
+                        <p>في إعدادات المشروع، اضغط على "Add app" واختر Android</p>
+                        <div class="code-block">
+                            <pre><code>Package name: com.giedo.digitalmall</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="firebase-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>تنزيل google-services.json</h3>
+                        <p>حمّل الملف وضعه في مجلد <code>android/app/</code></p>
+                    </div>
+                </div>
+
+                <div class="firebase-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>تشغيل FlutterFire CLI</h3>
+                        <div class="code-block">
+                            <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                            <pre><code># تثبيت CLI
+npm install -g firebase-tools
+dart pub global activate flutterfire_cli
+
+# إعداد المشروع
+flutterfire configure</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="firebase-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>تفعيل الخدمات</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Authentication → Email/Password</li>
+                            <li><i class="fas fa-check"></i> Firestore Database → Test mode</li>
+                            <li><i class="fas fa-check"></i> Storage (اختياري)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="firebase-diagram">
+                <h3>هيكل قاعدة البيانات</h3>
+                <div class="database-structure">
+                    <div class="db-collection">
+                        <i class="fas fa-database"></i>
+                        <strong>products/</strong>
+                        <span>المنتجات مع الصور والأسعار</span>
+                    </div>
+                    <div class="db-collection">
+                        <i class="fas fa-database"></i>
+                        <strong>users/</strong>
+                        <span>بيانات المستخدمين</span>
+                    </div>
+                    <div class="db-collection">
+                        <i class="fas fa-database"></i>
+                        <strong>orders/</strong>
+                        <span>الطلبات والمشتريات</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deploy Section -->
+    <section id="deploy" class="section deploy-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-rocket"></i>
+                    بناء التطبيق والنشر
+                </h2>
+                <p class="section-subtitle">خطوات نشر التطبيق على Google Play</p>
+            </div>
+
+            <div class="deploy-tabs">
+                <button class="deploy-tab active" data-tab="build">
+                    <i class="fas fa-hammer"></i>
+                    بناء APK
+                </button>
+                <button class="deploy-tab" data-tab="android">
+                    <i class="fas fa-android"></i>
+                    إعداد Android
+                </button>
+                <button class="deploy-tab" data-tab="publish">
+                    <i class="fas fa-upload"></i>
+                    النشر
+                </button>
+                <button class="deploy-tab" data-tab="tips">
+                    <i class="fas fa-lightbulb"></i>
+                    نصائح
+                </button>
+            </div>
+
+            <div id="deployContent" class="deploy-content">
+                <!-- سيتم ملؤه ديناميكياً -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="section download-section">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h2>هل أنت جاهز للبدء؟</h2>
+                <p>حمّل الكود الكامل للمشروع الآن</p>
+                <div class="download-buttons">
+                    <a href="#" class="btn btn-primary btn-lg" onclick="downloadAllCode()">
+                        <i class="fas fa-download"></i>
+                        تحميل الكود كاملاً (ZIP)
+                    </a>
+                    <a href="https://github.com/giedo-digital-mall/flutter-app" class="btn btn-secondary btn-lg" target="_blank">
+                        <i class="fab fa-github"></i>
+                        مشاهدة على GitHub
+                    </a>
+                </div>
+                <div class="file-info">
+                    <span><i class="fas fa-file-archive"></i> حجم الملف: ~2.5 MB</span>
+                    <span><i class="fas fa-code"></i> يتضمن: 25+ ملف Dart</span>
+                    <span><i class="fas fa-book"></i> دليل التثبيت: مرفق</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Giedo Digital Mall</span>
+                    </div>
+                    <p>متجر رقمي متكامل مع Firebase — مشروع Flutter احترافي جاهز للنشر</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#preview">معاينة التطبيق</a></li>
+                        <li><a href="#features">الميزات</a></li>
+                        <li><a href="#code">الكود</a></li>
+                        <li><a href="#firebase">Firebase</a></li>
+                        <li><a href="#deploy">النشر</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>تواصل معنا</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@giedo.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +967 777 123 456</li>
+                        <li><i class="fab fa-telegram"></i> @giedo_support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Giedo Digital Mall. جميع الحقوق محفوظة.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/screens.js"></script>
+    <script src="js/code-data.js"></script>
+</body>
+</html>
